@@ -7,6 +7,7 @@ class Owner
 
   def initialize(species)
     @species = species
+    @pets = { fishes: [], dogs: [], cats: [] }
     @@owners << self
   end
 
@@ -59,10 +60,6 @@ class Owner
 
   def say_species
     "I am a #{@species}."
-  end
-
-  def pets
-    { fishes: [], dogs: [], cats: [] }
   end
 
   def self.reset_all
