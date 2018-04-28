@@ -13,6 +13,16 @@ class Owner
     pets[:fishes] << fish
   end
 
+  def buy_cat(name)
+    fish = Cat.new(name)
+    pets[:cats] << fish
+  end
+
+  def buy_dog(name)
+    fish = Dog.new(name)
+    pets[:dogs] << fish
+  end
+
   def say_species
     puts "I am a #{@species}."
   end
