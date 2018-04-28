@@ -5,4 +5,12 @@ class Owner
     @name = name
     @@owners << self
   end
+
+  def self.reset_all
+    @@owners.clear
+  end
+
+  def self.all
+    @@owners
+  end
 end
