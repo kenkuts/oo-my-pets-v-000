@@ -5,12 +5,15 @@ class Owner
 
   def initialize(species)
     @species = species
+    @pets = {fishes: [], dogs: [], cats: []}
     @@owners << self
   end
 
   def say_species
     puts "I am a #{@species}."
   end
+
+  def pets
 
   def self.reset_all
     @@owners.clear
