@@ -7,6 +7,10 @@ class Owner
     @@owners << self
   end
 
+  def say_species
+    puts "I am a #{@species}."
+  end
+
   def self.reset_all
     @@owners.clear
   end
