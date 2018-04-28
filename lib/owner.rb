@@ -13,7 +13,7 @@ class Owner
   end
 
   def pets
-    @pets = { fishes: [], dogs: [], cats: [] }
+    { fishes: [], dogs: [], cats: [] }
   end
 
   def self.reset_all
