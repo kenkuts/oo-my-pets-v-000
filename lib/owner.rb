@@ -1,3 +1,5 @@
+require "pry"
+
 class Owner
   @@owners = []
   attr_accessor :name
