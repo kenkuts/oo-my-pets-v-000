@@ -1,8 +1,8 @@
 class Owner
   @@owners = []
 
-  def initialize(name)
-    @name = name
+  def initialize(species)
+    @species = species
     @@owners << self
   end
 
@@ -17,5 +17,5 @@ class Owner
   def self.count
     @@owners.size
   end
-  
+
 end
