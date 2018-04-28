@@ -8,6 +8,11 @@ class Owner
     @@owners << self
   end
 
+  def buy_fish(name)
+    fish = Fish.new(name)
+    pets[:fishes] << fish
+  end
+
   def say_species
     puts "I am a #{@species}."
   end
